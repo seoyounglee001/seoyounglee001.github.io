@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-06-01 00:00:00
-inline: true
+title: A long announcement with details
+date: 2026-03-01 00:00:00
+inline: false
 related_posts: false
 ---
-
-My paper [Cognitive Bias in AI-assisted Decision Making](https://psycnet.apa.org/record/2028-05917-001) got accepted in Translational Issues in Psychological Science.
+Our conference submission <span style="color: #4169E1;">How Collaboration Networks Shape AAC Adoption Diffusion and Social Communication Behavior in Autistic Children</span> got accepted in International Network for Social Network Analysis (INSNA).
