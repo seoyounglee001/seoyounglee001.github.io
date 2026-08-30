@@ -12,6 +12,15 @@ nav_order: 2
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
+<div class="pub-filters">
+  <button data-filter="All">All</button>
+  <button data-filter="AI">AI</button>
+  <button data-filter="Collaboration">Collaboration</button>
+  <button data-filter="Decision-Making">Collaboration</button>
+  <button data-filter="Healthcare">Healthcare</button>
+  <button data-filter="Design">Design</button>
+  <button data-filter="Underserved Population">Underserved Population</button>
+</div>
 
 <div class="publications">
 
