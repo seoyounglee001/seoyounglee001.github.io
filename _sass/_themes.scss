@@ -7,23 +7,24 @@ html[data-theme="dark"] {
   --global-theme-color: #000000;
   --global-hover-color: #cccccc;
 }
+.post .profile {
+  width: 160px !important;
+}
 
-.profile-photo {
-  width: 110px;
-  max-width: 110px;
-  height: auto;
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 15px;
+.post .profile img {
+  width: 160px !important;
+  height: auto !important;
 }
 
 @media (max-width: 768px) {
-  .profile-photo {
-    width: 90px;
-    max-width: 90px;
-    height: auto;
-    float: none;
-    display: block;
-    margin: 0 auto 20px auto;
+  .post .profile {
+    width: 130px !important;
+    float: none !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  .post .profile img {
+    width: 130px !important;
+    height: auto !important;
   }
 }
