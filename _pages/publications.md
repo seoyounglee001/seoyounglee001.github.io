@@ -7,23 +7,89 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
-
 <!-- Bibsearch Feature -->
-
 {% include bib_search.liquid %}
+
 <div class="pub-filters">
-  <button data-filter="All">All</button>
-  <button data-filter="AI">AI</button>
-  <button data-filter="Collaboration">Collaboration</button>
-  <button data-filter="Decision-Making">Collaboration</button>
-  <button data-filter="Healthcare">Healthcare</button>
-  <button data-filter="Design">Design</button>
-  <button data-filter="Underserved Population">Underserved Population</button>
+  <button data-filter="all">All</button>
+  <button data-filter="ai">AI</button>
+  <button data-filter="collaboration">Collaboration</button>
+  <button data-filter="decision">Decision-Making</button>
+  <button data-filter="healthcare">Healthcare</button>
+  <button data-filter="design">Design</button>
+  <button data-filter="underserved">Underserved Population</button>
 </div>
 
-<div class="publications">
-
-{% bibliography %}
-
+<!-- ALL -->
+<div id="pub-all" class="pub-group">
+  <div class="publications">
+    {% bibliography %}
+  </div>
 </div>
+
+<!-- AI -->
+<div id="pub-ai" class="pub-group" style="display: none;">
+  <div class="publications">
+    {% bibliography --query @*[ai=true] %}
+  </div>
+</div>
+
+<!-- COLLABORATION -->
+<div id="pub-collaboration" class="pub-group" style="display: none;">
+  <div class="publications">
+    {% bibliography --query @*[collaboration=true] %}
+  </div>
+</div>
+
+<!-- DECISION-MAKING -->
+<div id="pub-decision" class="pub-group" style="display: none;">
+  <div class="publications">
+    {% bibliography --query @*[decision_making=true] %}
+  </div>
+</div>
+
+<!-- HEALTHCARE -->
+<div id="pub-healthcare" class="pub-group" style="display: none;">
+  <div class="publications">
+    {% bibliography --query @*[healthcare=true] %}
+  </div>
+</div>
+
+<!-- DESIGN -->
+<div id="pub-design" class="pub-group" style="display: none;">
+  <div class="publications">
+    {% bibliography --query @*[design=true] %}
+  </div>
+</div>
+
+<!-- UNDERSERVED POPULATION -->
+<div id="pub-underserved" class="pub-group" style="display: none;">
+  <div class="publications">
+    {% bibliography --query @*[underserved=true] %}
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".pub-filters button");
+  const groups = document.querySelectorAll(".pub-group");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const filter = button.dataset.filter;
+
+      groups.forEach(function (group) {
+        group.style.display = "none";
+      });
+
+      document.getElementById("pub-" + filter).style.display = "block";
+
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+
+      button.classList.add("active");
+    });
+  });
+});
+</script>
