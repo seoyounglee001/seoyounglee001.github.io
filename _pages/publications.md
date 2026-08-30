@@ -7,7 +7,6 @@ nav: true
 nav_order: 2
 ---
 
-<!-- Bibsearch Feature -->
 {% include bib_search.liquid %}
 
 <div class="pub-filters">
@@ -20,52 +19,45 @@ nav_order: 2
   <button data-filter="underserved">Underserved Population</button>
 </div>
 
-<!-- ALL -->
 <div id="pub-all" class="pub-group">
   <div class="publications">
     {% bibliography %}
   </div>
 </div>
 
-<!-- AI -->
-<div id="pub-ai" class="pub-group" style="display: none;">
+<div id="pub-ai" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography --query @*[ai=true] %}
+    {% bibliography --query @*[keywords~=AI] %}
   </div>
 </div>
 
-<!-- COLLABORATION -->
-<div id="pub-collaboration" class="pub-group" style="display: none;">
+<div id="pub-collaboration" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography --query @*[collaboration=true] %}
+    {% bibliography --query @*[keywords~=Collaboration] %}
   </div>
 </div>
 
-<!-- DECISION-MAKING -->
-<div id="pub-decision" class="pub-group" style="display: none;">
+<div id="pub-decision" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography --query @*[decision_making=true] %}
+    {% bibliography --query @*[keywords~=Decision-Making] %}
   </div>
 </div>
 
-<!-- HEALTHCARE -->
-<div id="pub-healthcare" class="pub-group" style="display: none;">
+<div id="pub-healthcare" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography --query @*[healthcare=true] %}
+    {% bibliography --query @*[keywords~=Healthcare] %}
   </div>
 </div>
 
-<!-- DESIGN -->
-<div id="pub-design" class="pub-group" style="display: none;">
+<div id="pub-design" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography --query @*[design=true] %}
+    {% bibliography --query @*[keywords~=Design] %}
   </div>
 </div>
 
-<!-- UNDERSERVED POPULATION -->
-<div id="pub-underserved" class="pub-group" style="display: none;">
+<div id="pub-underserved" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography --query @*[underserved=true] %}
+    {% bibliography --query @*[keywords~=Underserved] %}
   </div>
 </div>
 
@@ -76,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   buttons.forEach(function (button) {
     button.addEventListener("click", function () {
-      const filter = button.dataset.filter;
+      const filter = this.dataset.filter;
 
       groups.forEach(function (group) {
         group.style.display = "none";
@@ -88,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.classList.remove("active");
       });
 
-      button.classList.add("active");
+      this.classList.add("active");
     });
   });
 });
