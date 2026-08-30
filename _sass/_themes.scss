@@ -8,6 +8,10 @@ html[data-theme="dark"] {
   --global-hover-color: #cccccc;
 }
 
+.post article p {
+  text-align: justify;
+}
+
 .post .profile {
   width: 18% !important;
 }
