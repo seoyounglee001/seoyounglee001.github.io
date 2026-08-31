@@ -21,3 +21,17 @@
 .publications ol.bibliography li .row {
   margin-left: -100px;
 }
+
+/* Dark Mode */
+html[data-theme="dark"] {
+  --global-bg-color: #1c1c1d;
+  --global-text-color: #e8e8e8;
+  --global-text-color-light: #b5b5b5;
+  --global-card-bg-color: #232323;
+  --global-divider-color: #424246;
+}
+
+html[data-theme="dark"] body {
+  background-color: var(--global-bg-color) !important;
+  color: var(--global-text-color) !important;
+}
