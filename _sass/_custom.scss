@@ -19,8 +19,12 @@
 
 /* Move publication list to the left on desktop */
 @media (min-width: 768px) {
-  .publications ol.bibliography {
-    margin-left: -100px !important;
-    width: calc(100% + 100px);
+  .publications ol.bibliography li .row .abbr {
+    display: none !important;
+  }
+
+  .publications ol.bibliography li .row > div:not(.abbr) {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
   }
 }
