@@ -1,4 +1,31 @@
-:root {
-  --global-theme-color: #000000;
-  --global-hover-color: #555555;
+/* Justify text */
+.post article p {
+  text-align: justify;
+}
+
+/* Smaller profile photo */
+.post .profile {
+  width: 18% !important;
+}
+
+.post .profile img {
+  width: 150px !important;
+  height: auto !important;
+}
+
+/* Remove publication thumbnail */
+.publications .preview {
+  display: none !important;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .post .profile {
+    width: 35% !important;
+  }
+
+  .post .profile img {
+    width: 130px !important;
+    height: auto !important;
+  }
 }
