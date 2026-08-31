@@ -13,9 +13,9 @@
   height: auto !important;
 }
 
-/* Remove publication thumbnail */
-.publications .preview {
-  display: none !important;
+/* Move publication entries to the left */
+.publications ol.bibliography li .row {
+  margin-left: -80px;
 }
 
 /* Mobile */
