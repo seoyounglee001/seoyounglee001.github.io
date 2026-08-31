@@ -27,37 +27,37 @@ nav_order: 2
 
 <div id="pub-ai" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography %}
+    {% bibliography --query @*[keywords ^= ai] %}
   </div>
 </div>
 
 <div id="pub-collaboration" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography %}
+    {% bibliography --query @*[keywords ^= collaboration] %}
   </div>
 </div>
 
 <div id="pub-decision" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography %}
+    {% bibliography --query @*[keywords ^= decision] %}
   </div>
 </div>
 
 <div id="pub-healthcare" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography %}
+    {% bibliography --query @*[keywords ^= healthcare] %}
   </div>
 </div>
 
 <div id="pub-design" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography %}
+    {% bibliography --query @*[keywords ^= design] %}
   </div>
 </div>
 
 <div id="pub-underserved" class="pub-group" style="display:none;">
   <div class="publications">
-    {% bibliography %}
+    {% bibliography --query @*[keywords ^= underserved] %}
   </div>
 </div>
 
