@@ -17,7 +17,10 @@
   height: auto !important;
 }
 
-/* Move publication entries to the left */
-.publications ol.bibliography li .row {
-  margin-left: -100px;
+/* Move publication list to the left on desktop */
+@media (min-width: 768px) {
+  .publications ol.bibliography {
+    margin-left: -100px !important;
+    width: calc(100% + 100px);
+  }
 }
