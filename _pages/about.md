@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: 7714.jpg
+  image: 7714.png
   image_circular: false
   more_info:
 
