@@ -38,7 +38,7 @@ latest_posts:
 }
 
 .profile img {
-  width: 150px !important;
+  width: 170px !important;
   height: auto !important;
 }
 </style>
