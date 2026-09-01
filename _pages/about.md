@@ -34,11 +34,11 @@ latest_posts:
 
 /* Profile photo size */
 .profile {
-  width: 30% !important;
+  width: 20% !important;
 }
 
 .profile img {
-  width: 170px !important;
+  width: 180px !important;
   height: auto !important;
 }
 </style>
