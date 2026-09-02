@@ -46,6 +46,6 @@ latest_posts:
 
 Hi! My name is Seo-young Lee and I am a postdoctoral researcher at A.J. Drexel Autism Institute. I worked as a Senior User Experience (UX) Manager at Samsung Life Insurance. Also, I completed Ph.D. in Human-Centered Design and B.A. in Communication from Cornell University. 
 
-My research examines how emerging technologies such as AI shape human collaboration and decision-making in contexts such as healthcare and design. I also study how human-centered technologies can empower underserved populations, particularly autistic individuals, by examining their interactions with technology within broader social ecosystems.
+My research examines how AI shapes human collaboration and decision-making in design and healthcare. I also study how human-centered technologies can empower underserved populations, particularly autistic individuals, by examining their interactions with technology within broader social ecosystems. My interdisciplinary research integrates UX design and psychology to advance human-centered technologies in healthcare and public health.
 
 For research collaborations or other academic opportunities, please feel free to reach out to me at **anneseoyoung.lee@gmail.com.**
