@@ -3,19 +3,6 @@
   width: 22% !important;
 }
 
-/*mobile*/
-@media (max-width: 576px) {
-  .post .profile {
-    width: 40% !important;
-  }
-
-  .post .profile img {
-    width: 140px !important;
-    max-width: none !important;
-    height: auto !important;
-  }
-}
-
 /* Smaller social icons */
 .social .contact-icons {
   font-size: 1.8rem !important;
