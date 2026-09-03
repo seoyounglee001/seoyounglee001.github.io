@@ -6,11 +6,12 @@
 /*mobile*/
 @media (max-width: 576px) {
   .post .profile {
-    width: 30% !important;
+    width: 40% !important;
   }
 
   .post .profile img {
-    width: 100px !important;
+    width: 140px !important;
+    max-width: none !important;
     height: auto !important;
   }
 }
